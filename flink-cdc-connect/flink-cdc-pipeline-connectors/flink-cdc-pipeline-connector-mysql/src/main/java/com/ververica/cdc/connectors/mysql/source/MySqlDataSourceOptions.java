@@ -237,4 +237,12 @@ public class MySqlDataSourceOptions {
                     .defaultValue(false)
                     .withDescription(
                             "Whether ignore no primary key table, by default is false. If set to true, will ignore no primary key tables.");
+
+    @Experimental
+    public static final ConfigOption<Boolean> ENABLE_COLUMN_COMMENTS =
+            ConfigOptions.key("enable.column.comments")
+                    .booleanType()
+                    .defaultValue(false)
+                    .withDescription(
+                            "Whether enable column comments, by default is false, if set to true, the column comment will be sent.");
 }

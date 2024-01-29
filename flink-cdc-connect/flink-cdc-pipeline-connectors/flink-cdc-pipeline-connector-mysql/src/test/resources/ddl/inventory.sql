@@ -78,3 +78,12 @@ values (1, 'Sally'),
        (2, 'George');
 
 
+-- create a table which contain column comments
+CREATE TABLE columnCommentsTable(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '自增主键',
+    name varchar(255) NOT NULL COMMENT '名称'
+);
+
+INSERT INTO columnCommentsTable
+VALUES (DEFAULT, 'Sally'),
+       (DEFAULT, 'George');
